@@ -1,11 +1,11 @@
 <?php
 
-namespace VendorName\Skeleton\Settings;
+namespace Astrogoat\Marketing\Settings;
 
 use Helix\Lego\Settings\AppSettings;
 use Illuminate\Validation\Rule;
 
-class SkeletonSettings extends AppSettings
+class MarketingSettings extends AppSettings
 {
     // public string $url;
 
@@ -18,11 +18,11 @@ class SkeletonSettings extends AppSettings
 
     public function description(): string
     {
-        return 'Interact with Skeleton.';
+        return 'Interact with Marketing.';
     }
 
     public static function group(): string
     {
-        return 'skeleton';
+        return 'marketing';
     }
 }

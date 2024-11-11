@@ -6,11 +6,11 @@ return new class extends SettingsMigration
 {
     public function up(): void
     {
-        $this->migrator->add('skeleton.enabled', false);
+        $this->migrator->add('marketing.enabled', false);
     }
 
     public function down()
     {
-        $this->migrator->delete('skeleton.enabled');
+        $this->migrator->delete('marketing.enabled');
     }
 };
