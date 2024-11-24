@@ -2,10 +2,12 @@
 
 namespace Astrogoat\Marketing;
 
+use Livewire\Livewire;
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\AppPackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Astrogoat\Marketing\Settings\MarketingSettings;
+use Astrogoat\Marketing\Settings\Peripherals\PromotionBar;
 
 class MarketingServiceProvider extends AppPackageServiceProvider
 {
@@ -25,5 +27,17 @@ class MarketingServiceProvider extends AppPackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package->name('marketing')->hasConfigFile()->hasViews();
+    }
+
+    public function bootingPackage(): void
+    {
+        Livewire::component('astrogoat.marketing.settings.peripherals.promotion-bar', PromotionBar::class);
+    }
+
+    public function registeringPackage(): void
+    {
+        parent::registeringPackage();
+
+        $this->app->singleton(Marketing::class);
     }
 }

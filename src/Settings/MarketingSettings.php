@@ -2,27 +2,41 @@
 
 namespace Astrogoat\Marketing\Settings;
 
+use ReflectionClass;
+use ReflectionProperty;
+use Illuminate\Support\Str;
 use Helix\Lego\Settings\AppSettings;
-use Illuminate\Validation\Rule;
+use Astrogoat\Marketing\Settings\Peripherals\PromotionBar;
 
 class MarketingSettings extends AppSettings
 {
-    // public string $url;
+    public string $promotion_bar_text;
+    public string $promotion_bar_background_color;
+    public string $promotion_bar_text_color;
+
+    protected array $peripherals = [
+        PromotionBar::class,
+    ];
 
     public function rules(): array
     {
-        // return [
-        //     'url' => Rule::requiredIf($this->enabled === true),
-        // ];
+        return [
+//            'settings.promotion_bar_text' => Rule::requiredIf($this->enabled === true),
+        ];
     }
 
     public function description(): string
     {
-        return 'Interact with Marketing.';
+        return 'Miscellaneous marketing tools.';
     }
 
     public static function group(): string
     {
         return 'marketing';
+    }
+
+    public function hidden(): array
+    {
+        return $this->getPublicPropertiesStartingWith('promotion_bar_');
     }
 }
