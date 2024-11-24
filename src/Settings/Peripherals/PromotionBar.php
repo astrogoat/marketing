@@ -2,8 +2,8 @@
 
 namespace Astrogoat\Marketing\Settings\Peripherals;
 
-use Illuminate\Validation\Rule;
 use Helix\Lego\Settings\Peripherals\Peripheral;
+use Illuminate\Validation\Rule;
 
 class PromotionBar extends Peripheral
 {

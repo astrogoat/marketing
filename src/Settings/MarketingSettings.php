@@ -2,11 +2,8 @@
 
 namespace Astrogoat\Marketing\Settings;
 
-use ReflectionClass;
-use ReflectionProperty;
-use Illuminate\Support\Str;
-use Helix\Lego\Settings\AppSettings;
 use Astrogoat\Marketing\Settings\Peripherals\PromotionBar;
+use Helix\Lego\Settings\AppSettings;
 
 class MarketingSettings extends AppSettings
 {

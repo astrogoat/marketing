@@ -2,8 +2,8 @@
 
 namespace Astrogoat\Marketing;
 
-use Illuminate\Support\Manager;
 use Astrogoat\Marketing\Drivers\LogDriver;
+use Illuminate\Support\Manager;
 
 class Marketing extends Manager
 {

@@ -2,8 +2,8 @@
 
 namespace Astrogoat\Marketing\Drivers;
 
-use Illuminate\Support\Facades\Log;
 use Astrogoat\Marketing\MarketingDriver;
+use Illuminate\Support\Facades\Log;
 
 class LogDriver implements MarketingDriver
 {

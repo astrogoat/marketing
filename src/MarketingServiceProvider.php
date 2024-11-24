@@ -2,12 +2,12 @@
 
 namespace Astrogoat\Marketing;
 
-use Livewire\Livewire;
-use Helix\Lego\Apps\App;
-use Helix\Lego\Apps\AppPackageServiceProvider;
-use Spatie\LaravelPackageTools\Package;
 use Astrogoat\Marketing\Settings\MarketingSettings;
 use Astrogoat\Marketing\Settings\Peripherals\PromotionBar;
+use Helix\Lego\Apps\App;
+use Helix\Lego\Apps\AppPackageServiceProvider;
+use Livewire\Livewire;
+use Spatie\LaravelPackageTools\Package;
 
 class MarketingServiceProvider extends AppPackageServiceProvider
 {
