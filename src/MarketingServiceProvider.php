@@ -2,12 +2,12 @@
 
 namespace Astrogoat\Marketing;
 
-use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Astrogoat\Marketing\Settings\MarketingSettings;
 use Astrogoat\Marketing\Settings\Peripherals\Popup;
 use Astrogoat\Marketing\Settings\Peripherals\PromotionBar;
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\AppPackageServiceProvider;
+use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 

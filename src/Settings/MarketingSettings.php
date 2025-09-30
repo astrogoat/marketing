@@ -16,8 +16,8 @@ class MarketingSettings extends AppSettings
     public string $popup_content;
     public bool $popup_center_content;
     public bool $popup_show_once_per_session;
-//    public string $popup_text_color;
-//    public string $popup_background_color;
+    //    public string $popup_text_color;
+    //    public string $popup_background_color;
     public string $popup_delay_in_seconds;
 
     protected array $peripherals = [
